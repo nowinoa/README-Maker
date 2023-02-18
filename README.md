@@ -19,7 +19,7 @@ It creates a readme file by answering the iput questions on the terminal of your
 :point_right:  https://github.com/nowinoa/README-Maker  :point_left:
 
 
-        <img src="https://www.wikihow.com/images/thumb/2/2f/Write-a-Read-Me-Step-1.jpg/v4-460px-Write-a-Read-Me-Step-1.jpg.webp">
+<img src="https://www.wikihow.com/images/thumb/2/2f/Write-a-Read-Me-Step-1.jpg/v4-460px-Write-a-Read-Me-Step-1.jpg.webp">
 
 
 # Installation

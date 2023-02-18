@@ -43,12 +43,12 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Write a brief xplanation about how to use this project',
+            message: 'Write a explanation about how to use this project',
             name: 'usage'
         },
         {
             type: 'input',
-            message: 'Have this project had any contributor?',
+            message: 'Have this project had any contributor? If is not the case, please print "none"',
             name: 'contributors'
         },
         {

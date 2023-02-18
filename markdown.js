@@ -29,15 +29,14 @@ function linkToProject(link) {
 //When the user provides a url it will add an image to the readme
 function renderImage (src) {
     if(src !== ''){
-        return `
-        <img src="${src}">`
+        return `<img src="${src}">`
     } else {
         return ''
     }
 }
 function collaboration (coll, username, name) {
     if(coll !== 'none') {
-        return ` This is a collaborative project by ${coll}`
+        return `This is a collaborative project by ${coll}`
     } else {
         return `Created by <a href="https://github.com/${username}">${name}</a>`
     }
