@@ -1,3 +1,6 @@
+//Icons
+
+
 //renders the license image/icon
 function renderLicense (license) {
   if (license != "none") {
@@ -19,14 +22,22 @@ This project is Licensed under ${license}
     }
 
 }
+const imageMap = {
+    es6: '<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">',
+    javascript: '<img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px">',
+    html: '<img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px">',
+    css: '<img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="30px" height="30px">',
+    react: '<img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="30px" height="30px">'
+  };
 //Check which programming language has been selected and adds an icon on its place
-function iconProgrammingLanguages(languages) {
-    for (const language of languages) {
-        return `
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="21px" height="21px"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/${language}" title="${language}"><img src="https://github.com/get-icon/geticon/raw/master/icons/${language}.svg" alt="${language}" width="21px" height="21px"></a> 
-`
-}
+function iconProgrammingLanguages(languages) { 
+    let lang = [];
+    for (let i = 0; i < languages.length; i++) {
+        const value = languages[i];
+        const image = imageMap[value];
+        lang.push(image);
+      }
+      return lang
 }
 //Readme template
 function markdownMaker (data) {
