@@ -1,9 +1,10 @@
-<pre><code>            # my world travel
+<pre><code>            # ainhoa
+
             ## Description
 
-              traveling app to go and go and go and go!
+              prada
 
             ## Contributors
-            
-              myself and node 
+
+              tello
 </code></pre>

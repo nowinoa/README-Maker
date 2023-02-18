@@ -1,6 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdown = require('markdown-it')();
+const { json } = require('stream/consumers');
+const markdown = require('markdown-it');
+const MarkdownIt = require('markdown-it');
+const md = new MarkdownIt();
 let title = '';
 let description = '';
 let contributors = '';
@@ -23,14 +26,14 @@ inquirer
             name: 'contributors'
         }
     ]).then((res) => {
-        console.log(res);
+        JSON.stringify(res)
         const readme = `
                 # ${res.title}\n
                 ## Description\n
                   ${res.description}\n
                 ## Contributors\n
                   ${res.contributors}\n`;
-        const readmeMd = markdown.render(readme);
+        const readmeMd = md.render(readme);
         fs.writeFile('README.md', readmeMd , (err) => err ? console.log(err) : console.log('Saved!'));
     });
 
