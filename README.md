@@ -10,19 +10,19 @@
 * [License](#license)
 
 ## Programming Languages
-<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">,<img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px">,<img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px">,<img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="30px" height="30px">,<img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="30px" height="30px">
+<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px" margin-right="10px">,<img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px" margin-right="10px">,<img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px" margin-right="10px">
 
 ## Description
-Introducing our ReadMe Maker app, designed to simplify the process of creating clear and concise documentation for your software projects. With intuitive formatting tools and customizable templates, our app helps you quickly generate professional-grade ReadMe files to showcase your project's features and instructions. Save time and improve your project's accessibility with ReadMe Maker.
+eeeee
 
 ## Installation
-Introducing our ReadMe Maker app, designed to simplify the process of creating clear and concise documentation for your software projects. With intuitive formatting tools and customizable templates, our app helps you quickly generate professional-grade ReadMe files to showcase your project's features and instructions. Save time and improve your project's accessibility with ReadMe Maker.
+eeee
 
 ## Usage
-Introducing our ReadMe Maker app, designed to simplify the process of creating clear and concise documentation for your software projects. With intuitive formatting tools and customizable templates, our app helps you quickly generate professional-grade ReadMe files to showcase your project's features and instructions. Save time and improve your project's accessibility with ReadMe Maker.
+ee
 
 ## Credits
-node y npm
+eee
 
 
 ## License
