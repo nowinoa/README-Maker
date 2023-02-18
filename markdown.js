@@ -19,26 +19,26 @@ function renderLicenseSection (license) {
 function markdownMaker (data) {
     return `
     
-    # ${data.title}
-    
-    ## Table of Contents
+# ${data.title}
 
-    * [Description](#description)
-    * ${linkToLicense(data.license)}
-    * [Installation](#installation)
-    
+## Table of Contents
 
-    ## Description
+* [Description](#description)
+* ${linkToLicense(data.license)}
+* [Installation](#installation)
 
-    ${data.description}
-    
-    ## Contributors
 
-    ${data.contributors}
+## Description
 
-    ${renderLicenseSection(data.license)}
+${data.description}
 
-    ${renderLicense(data.license)}
+## Contributors
+
+${data.contributors}
+
+${renderLicenseSection(data.license)}
+
+${renderLicense(data.license)}
     
     `}
 

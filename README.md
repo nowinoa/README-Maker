@@ -1,19 +1,19 @@
 
     
-    # Readme Maker
+# Readme Maker
     
-    ## Table of Contents
+## Table of Contents
 
     * [Description](#description)
     * [License](#license)
     * [Installation](#installation)
     
 
-    ## Description
+## Description
 
     Introducing our ReadMe Maker app, designed to simplify the process of creating clear and concise documentation for your software projects. With intuitive formatting tools and customizable templates, our app helps you quickly generate professional-grade ReadMe files to showcase your project's features and instructions. Save time and improve your project's accessibility with ReadMe Maker.
     
-    ## Contributors
+## Contributors
 
     node and npm
 
