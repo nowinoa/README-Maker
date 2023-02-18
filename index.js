@@ -1,8 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require('markdown-it')();
 let title = '';
 let description = '';
 let contributors = '';
+
 inquirer
     .prompt([
         {
@@ -21,13 +23,15 @@ inquirer
             name: 'contributors'
         }
     ]).then((res) => {
-        console.log(res)
-        const readme = `<
-                # ${res.title}\n
-                ## Description\n
-                ${res.description}\n
-                ## Contributors\n
-                ${res.contributors}>`;
-        fs.writeFile('README.md', readme , (err) => err ? console.log(err) : console.log('Saved!'));
-    })
+        console.log(res);
+        const readme = `
+                # ${res.title}
+                ## Description
+                  ${res.description}
+                ## Contributors
+                  ${res.contributors}`;
+        const readmeMd = markdown.render(readme);
+        fs.writeFile('README.md', readmeMd , (err) => err ? console.log(err) : console.log('Saved!'));
+    });
 
+//se tiene q escribir en markdown but idk so difficult - keep researching

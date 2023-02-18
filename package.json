@@ -19,6 +19,7 @@
   "homepage": "https://github.com/nowinoa/README-Maker#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^6.5.0"
+    "inquirer": "^6.5.0",
+    "markdown-it": "^13.0.1"
   }
 }
