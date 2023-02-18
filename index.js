@@ -30,7 +30,6 @@ inquirer
             name: 'license'
         }
     ]).then((res) => {
+        //Adds the input responses to the markdown template on the markdown.js and then writes the content on a readme file. If the response doesn't have errors it will say succes, but if it does have, will log the error.
         fs.writeFileSync('README.md', markdownMaker(res), (err) => err ? console.log(err) : console.log('Success!!') );
     });
-
-//se tiene q escribir en markdown but idk so difficult - keep researching
