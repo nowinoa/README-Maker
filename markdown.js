@@ -1,6 +1,3 @@
-//Icons
-
-
 //renders the license image/icon
 function renderLicense (license) {
   if (license != "none") {
@@ -22,14 +19,21 @@ This project is Licensed under ${license}
     }
 
 }
+//List of images to display the icons on programming languages section
 const imageMap = {
     es6: '<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">',
     javascript: '<img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px">',
     html: '<img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px">',
     css: '<img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="30px" height="30px">',
-    react: '<img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="30px" height="30px">'
+    react: '<img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="30px" height="30px">',
+    bootstrap: '<img src="https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg" alt="Bootstrap" width="30px" height="30px">',
+    jQuery: '<img src="https://github.com/get-icon/geticon/raw/master/icons/jquery-icon.svg" alt="jQuery" width="30px" height="30px">',
+    node: '<img src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="30px" height="30px">',
+    npm: '<img src="https://github.com/get-icon/geticon/raw/master/icons/npm.svg" alt="npm" width="30px" height="30px">',
+    git: '<img src="https://github.com/get-icon/geticon/raw/master/icons/git-icon.svg" alt="Git" width="30px" height="30px">',
+    typescript: '<img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="30px" height="30px">'
   };
-//Check which programming language has been selected and adds an icon on its place
+//Check which programming language has been selected, transforms it into an image (from below) and pushes it to an empty array that we will later return using join to remove commas and add spaces between icons
 function iconProgrammingLanguages(languages) { 
     let lang = [];
     for (let i = 0; i < languages.length; i++) {
@@ -58,7 +62,8 @@ ${iconProgrammingLanguages(data.programming)}
 ## Description
 ${data.description}
 
-## Installation
+#
+# Installation
 ${data.installation}
 
 ## Usage

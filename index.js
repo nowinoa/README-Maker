@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { json } = require('stream/consumers');
 const markdownMaker = require('./markdown');
 
+//inputs the questions on the terminal
 inquirer
     .prompt([
         {
@@ -12,8 +12,8 @@ inquirer
         },
         {
             type: 'checkbox',
-            message: 'Which programming languages are you using?',
-            choices: ['es6' , 'javascript', 'html', 'css', 'react', 'bootstrap'],
+            message: 'Which programming tools are you using?',
+            choices: ['es6' , 'javascript', 'html', 'css', 'react', 'bootstrap', 'jQuery', 'node', 'npm', 'git', 'typescript'],
             name: 'programming'
         },
         {
