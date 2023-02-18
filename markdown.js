@@ -1,4 +1,4 @@
-//
+//renders the license image/icon
 function renderLicense (license) {
   if (license != "none") {
     return `![this was a badge](https://img.shields.io/badge/License-${license}-blue.svg)`;
