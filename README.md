@@ -1,6 +1,6 @@
 
 ![this was a badge](https://img.shields.io/badge/License-Apache-blue.svg)
-# eeeeeeeeeeee
+# rreeeeeeeeeed
 
 ## Table of Contents
 * [Description](#description)
@@ -10,19 +10,19 @@
 * [License](#license)
 
 ## Programming Languages
-<img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px" style="margin-right: 25px"><img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px" style="margin-right: 25px"><img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="30px" height="30px" style="margin-right: 25px"><img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="30px" height="30px" style="margin-right: 25px">
+<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="30px" height="30px">
 
 ## Description
-eeeeeeee
+rrr
 
 ## Installation
- eeeeeeeeeee
+rr
 
 ## Usage
-e
+rr
 
 ## Credits
-ee
+rr
 
 
 ## License
