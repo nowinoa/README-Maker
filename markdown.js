@@ -37,7 +37,7 @@ function iconProgrammingLanguages(languages) {
         const image = imageMap[value];
         lang.push(image);
       }
-      return lang;
+      return lang.join('');
 }
 //Readme template
 function markdownMaker (data) {
