@@ -1,9 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { json } = require('stream/consumers');
-const markdown = require('markdown-it');
-const MarkdownIt = require('markdown-it');
-const md = new MarkdownIt();
+const markdownMaker = require('./markdown');
+
 let title = '';
 let description = '';
 let contributors = '';
@@ -24,17 +23,14 @@ inquirer
             type: 'input',
             message: 'Any contributor to this project?',
             name: 'contributors'
+        },
+        {
+            type: 'input',
+            message: 'Which license are you using?',
+            name: 'license'
         }
     ]).then((res) => {
-        JSON.stringify(res)
-        const readme = `
-                # ${res.title}\n
-                ## Description\n
-                  ${res.description}\n
-                ## Contributors\n
-                  ${res.contributors}\n`;
-        const readmeMd = md.render(readme);
-        fs.writeFile('README.md', readmeMd , (err) => err ? console.log(err) : console.log('Saved!'));
+        fs.writeFileSync('README.md', markdownMaker(res), (err) => err ? console.log(err) : console.log('Success!!') );
     });
 
 //se tiene q escribir en markdown but idk so difficult - keep researching
