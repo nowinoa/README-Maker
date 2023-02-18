@@ -3,10 +3,6 @@ const fs = require('fs');
 const { json } = require('stream/consumers');
 const markdownMaker = require('./markdown');
 
-let title = '';
-let description = '';
-let contributors = '';
-
 inquirer
     .prompt([
         {
