@@ -22,22 +22,18 @@ function markdownMaker (data) {
 # ${data.title}
 
 ## Table of Contents
-
     * [Description](#description)
     * ${linkToLicense(data.license)}
     * [Installation](#installation)
 
 
 ## Description
-
     ${data.description}
 
 ## Contributors
-
     ${data.contributors}
 
 ${renderLicenseSection(data.license)}
-
     ${renderLicense(data.license)}
     
     `}
