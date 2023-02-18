@@ -1,10 +1,10 @@
 
-                # Readme maker
+                #ss
 
-                ## Description
+                ##Description
 
-                It makes readme files with node.js from the terminal :)
+                ss
 
-                ## Contributors
+                ##Contributors
 
-                Myself, node and npm pakages (fs ,inquirer) 
+                ss

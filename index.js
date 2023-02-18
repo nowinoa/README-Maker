@@ -22,12 +22,12 @@ inquirer
         }
     ]).then((res) => {
         console.log(res)
-        const readme = `
+        const readme = `<
                 # ${res.title}\n
                 ## Description\n
                 ${res.description}\n
                 ## Contributors\n
-                ${res.contributors}`;
+                ${res.contributors}>`;
         fs.writeFile('README.md', readme , (err) => err ? console.log(err) : console.log('Saved!'));
     })
 
