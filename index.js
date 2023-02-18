@@ -48,7 +48,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Have this project had any contributor? If is not the case, please print "none"',
+            message: 'List your contributors name (Sara Smith, Mark Denver...) or print "none"',
             name: 'contributors'
         },
         {

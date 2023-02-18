@@ -34,6 +34,8 @@ function renderImage (src) {
         return ''
     }
 }
+//When the user collaborated with someone else this will print the names
+//When the users types none to the collaborators questions, this will type the owners name on an anchor tag linked to the github profile
 function collaboration (coll, username, name) {
     if(coll !== 'none') {
         return `This is a collaborative project by ${coll}`
@@ -102,15 +104,5 @@ ${renderLicenseSection(data.license)}
 ## More Projects
 Discover my skills and experience - explore my GitHub profile for more https://github.com/${data.github} :computer:
 `}
-
 //exports the markdown maker function so we can use it in other modules
 module.exports = markdownMaker;
-
-//TODO
-//make a function for credits in case of collavorative
-//list your collaborators. If none, please enter 'none'
-    //if none then
-        //I creatted this project by myself
-    //Else --> list your collaborators following this example = Sara Smith, ...
-            //Provide the username on the same order as below
-//Video --> add a video section with a link
