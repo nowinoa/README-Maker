@@ -28,13 +28,24 @@ ${renderLicense(data.license)}
 
 ## Table of Contents
 * [Description](#description)
-* ${linkToLicense(data.license)}
 * [installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* ${linkToLicense(data.license)}
+
+## Programming Languages
+<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="21px" height="21px"></a>
 
 ## Description
 ${data.description}
 
-## Contributors
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Credits
 ${data.contributors}
 
 ${renderLicenseSection(data.license)}

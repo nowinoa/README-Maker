@@ -21,11 +21,22 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Any contributor to this project?',
+            message: 'Which installation process you need to apply to run this project on other computer?',
+            name: 'installation'
+        },
+        {
+            type: 'input',
+            message: 'Write a brief xplanation about how to use this project',
+            name: 'usage'
+        },
+        {
+            type: 'input',
+            message: 'Have this project had any contributor?',
             name: 'contributors'
         },
         {
             type: 'list',
+            message: 'Choose your license:',
             choices: ['Apache','GNU','MIT','Mozilla','General Common', 'Eclipse Public', 'none'],
             name: 'license'
         }
