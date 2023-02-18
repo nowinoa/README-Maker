@@ -19,15 +19,17 @@ tool then formats this information in Markdown language to create a README file 
 :point_right:  https://github.com/nowinoa/README-Maker  :point_left:
 
 
+<img src="https://www.wikihow.com/images/thumb/2/2f/Write-a-Read-Me-Step-1.jpg/v4-460px-Write-a-Read-Me-Step-1.jpg.webp">
+
 
 # Installation
-ool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it
+tool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it.
 
 ## Usage
-ool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it
+tool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it.
 
 ## Credits
-Node and NPM
+none
 
 
 ## License

@@ -22,9 +22,14 @@ inquirer
             name: 'description'
         },
         {
-            type: 'input',
+            type: 'url',
             message: 'Do you have a link to your project?',
             name: 'linkProject'
+        },
+        {
+            type: 'url',
+            message: 'Do you have any link with a picture of your project?',
+            name: 'linkPic'
         },
         {
             type: 'input',

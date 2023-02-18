@@ -26,6 +26,10 @@ function linkToProject(link) {
 `
     }
 }
+function renderImage (src) {
+    return `
+<img src="${src}">`
+}
 //List of images to display the icons on programming languages section
 const imageMap = {
     es6: '<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">',
@@ -70,6 +74,7 @@ ${iconProgrammingLanguages(data.programming)}
 ## Description
 ${data.description}
 ${linkToProject(data.linkProject)}
+${renderImage(data.linkPic)}
 
 
 # Installation
@@ -90,8 +95,12 @@ Discover my skills and experience - explore my GitHub profile for more https://g
 //exports the markdown maker function so we can use it in other modules
 module.exports = markdownMaker;
 
+//make a function for credits in case of collavorative
+//list your collaborators. If none, please enter 'none'
+    //if none then
+        //I creatted this project by myself
+    //Else --> list your collaborators following this example = Sara Smith, ...
+            //Provide the username on the same order as below
 //TODO
-//Link to deployed page on description and to the repository
 //Add an image of your project --> url of any picture you would like to add?
 //Video --> add a video section with a link
-//At the end add a contact section --> add the github profile and also some copy right and email
