@@ -17,8 +17,8 @@ function renderLicenseSection (license) {
 This project is under ${license} license
         `
     }
-
 }
+//When the user provides a url to the page, it loads some icons with a link to the project
 function linkToProject(link) {
     if(link !== '') {
         return `
@@ -26,12 +26,20 @@ function linkToProject(link) {
 `
     }
 }
+//When the user provides a url it will add an image to the readme
 function renderImage (src) {
     if(src !== ''){
         return `
         <img src="${src}">`
     } else {
         return ''
+    }
+}
+function collaboration (coll, username, name) {
+    if(coll !== 'none') {
+        return ` This is a collaborative project by ${coll}`
+    } else {
+        return `Created by <a href="https://github.com/${username}">${name}</a>`
     }
 }
 //List of images to display the icons on programming languages section
@@ -88,7 +96,7 @@ ${data.installation}
 ${data.usage}
 
 ## Credits
-${data.contributors}
+${collaboration(data.contributors, data.github, data.name)}
 
 ${renderLicenseSection(data.license)}
 

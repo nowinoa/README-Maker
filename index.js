@@ -7,6 +7,11 @@ inquirer
     .prompt([
         {
             type: 'input',
+            message: 'Hello, and welcome to the ultimate readme maker. Can I get your name?',
+            name: 'name'
+        },
+        {
+            type: 'input',
             message: 'What is your project title?',
             name: 'title'
         },
