@@ -35,7 +35,7 @@ function iconProgrammingLanguages(languages) {
     for (let i = 0; i < languages.length; i++) {
         const value = languages[i];
         const image = imageMap[value];
-        lang.push(image);
+        lang.push(image + '&nbsp');
       }
       return lang.join('');
 }
