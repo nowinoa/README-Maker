@@ -22,7 +22,7 @@ This project is Licensed under ${license}
 function linkToProject(link) {
     if(link !== '') {
         return `
-:point_right:${link}:point_left:
+:point_right:  ${link}  :point_left:
 `
     }
 }
@@ -57,8 +57,8 @@ ${renderLicense(data.license)}
 # ${data.title}
 
 ## Table of Contents
-* [Description](#description)
 * [Tools](#tools)
+* [Description](#description)
 * [installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
