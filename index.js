@@ -23,6 +23,11 @@ inquirer
         },
         {
             type: 'input',
+            message: 'Do you have a link to your project?',
+            name: 'linkProject'
+        },
+        {
+            type: 'input',
             message: 'Which installation process you need to apply to run this project on other computer?',
             name: 'installation'
         },

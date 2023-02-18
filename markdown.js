@@ -19,6 +19,13 @@ This project is Licensed under ${license}
     }
 
 }
+function linkToProject(link) {
+    if(link !== '') {
+        return `
+:point_right:${link}:point_left:
+`
+    }
+}
 //List of images to display the icons on programming languages section
 const imageMap = {
     es6: '<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">',
@@ -51,18 +58,20 @@ ${renderLicense(data.license)}
 
 ## Table of Contents
 * [Description](#description)
+* [Tools](#tools)
 * [installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 * ${linkToLicense(data.license)}
 
-## Programming Languages
+## Tools
 ${iconProgrammingLanguages(data.programming)}
 
 ## Description
 ${data.description}
+${linkToProject(data.linkProject)}
 
-#
+
 # Installation
 ${data.installation}
 
@@ -77,3 +86,9 @@ ${renderLicenseSection(data.license)}
 
 //exports the markdown maker function so we can use it in other modules
 module.exports = markdownMaker;
+
+//TODO
+//Link to deployed page on description and to the repository
+//Add an image of your project --> url of any picture you would like to add?
+//Video --> add a video section with a link
+//At the end add a contact section --> add the github profile and also some copy right and email
