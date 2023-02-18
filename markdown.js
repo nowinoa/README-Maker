@@ -11,9 +11,10 @@ function linkToLicense (license) {
 }
 //If there is a license selected then add the license section to the readme
 function renderLicenseSection (license) {
-    if (license != 'none') return `
-    ## License
-    This project is Licensed under ${license}`
+    if (license != 'none') return 
+`
+## License
+This project is Licensed under ${license}`
 }
 //Readme template
 //Fix the format
@@ -22,11 +23,9 @@ function markdownMaker (data) {
 # ${data.title}
 
 ## Table of Contents
-
- * [Description](#description)
- * ${linkToLicense(data.license)}
- * [Installation](#installation)
-
+* [Description](#description)
+* ${linkToLicense(data.license)}
+* [installation](#installation)
 
 ## Description
 ${data.description}
@@ -37,7 +36,7 @@ ${data.contributors}
 ${renderLicenseSection(data.license)}
 ${renderLicense(data.license)}
     
-    `}
+`}
 
 //exports the markdown maker function so we can use it in other modules
 module.exports = markdownMaker;
