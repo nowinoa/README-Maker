@@ -7,7 +7,9 @@ function renderLicense (license) {
 }
 //If there is a license selected then add the license link to the table of contents
 function linkToLicense (license) {
-    if(license != 'none') return `[License](#license)`
+    if(license != 'none') {
+        return `[License](#license)`;
+    } 
 }
 //If there is a license selected then add the license section to the readme
 function renderLicenseSection (license) {
@@ -16,7 +18,9 @@ function renderLicenseSection (license) {
 ## License
 This project is under ${license} license
         `
-    }
+    } else if (license == 'none') {
+        return '';
+    };
 }
 //When the user provides a url to the page, it loads some icons with a link to the project
 function linkToProject(link) {
