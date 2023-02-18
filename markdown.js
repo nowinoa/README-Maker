@@ -16,25 +16,26 @@ function renderLicenseSection (license) {
     This project is Licensed under ${license}`
 }
 //Readme template
+//Fix the format
 function markdownMaker (data) {
     return `
-    
 # ${data.title}
 
 ## Table of Contents
-    * [Description](#description)
-    * ${linkToLicense(data.license)}
-    * [Installation](#installation)
+
+ * [Description](#description)
+ * ${linkToLicense(data.license)}
+ * [Installation](#installation)
 
 
 ## Description
-    ${data.description}
+${data.description}
 
 ## Contributors
-    ${data.contributors}
+${data.contributors}
 
 ${renderLicenseSection(data.license)}
-    ${renderLicense(data.license)}
+${renderLicense(data.license)}
     
     `}
 
