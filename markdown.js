@@ -14,7 +14,7 @@ function renderLicenseSection (license) {
     if (license != 'none') {
         return `
 ## License
-This project is Licensed under ${license}
+This project is under ${license} license
         `
     }
 
@@ -82,6 +82,9 @@ ${data.usage}
 ${data.contributors}
 
 ${renderLicenseSection(data.license)}
+
+## More Projects
+Discover my skills and experience - explore my GitHub profile for more https://github.com/${data.github} :computer:
 `}
 
 //exports the markdown maker function so we can use it in other modules

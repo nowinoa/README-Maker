@@ -11,7 +11,7 @@
 * [License](#license)
 
 ## Tools
-<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg" alt="Bootstrap" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/jquery-icon.svg" alt="jQuery" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/npm.svg" alt="npm" width="30px" height="30px">
+<img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg" alt="Bootstrap" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/jquery-icon.svg" alt="jQuery" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/npm.svg" alt="npm" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/git-icon.svg" alt="Git" width="30px" height="30px">
 
 ## Description
 tool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it.
@@ -21,15 +21,18 @@ tool then formats this information in Markdown language to create a README file 
 
 
 # Installation
-tool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it.
+ool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it
 
 ## Usage
-tool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it.
+ool then formats this information in Markdown language to create a README file that can be easily read and understood by others. The end result is a well-structured and informative README that helps users better understand the project and how to use it
 
 ## Credits
-node
+Node and NPM
 
 
 ## License
-This project is Licensed under MIT
+This project is under MIT license
         
+
+## More Projects
+Discover my skills and experience - explore my GitHub profile for more https://github.com/nowinoa :computer:

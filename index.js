@@ -46,6 +46,11 @@ inquirer
             message: 'Choose your license:',
             choices: ['Apache','GNU','MIT','Mozilla','General Common', 'Eclipse Public', 'none'],
             name: 'license'
+        },
+        {
+            type: 'input',
+            message: 'Finally, provide your github username',
+            name: 'github'
         }
     ]).then((res) => {
         //Adds the input responses to the markdown template on the markdown.js and then writes the content on a readme file. If the response doesn't have errors it will say succes, but if it does have, will log the error.
