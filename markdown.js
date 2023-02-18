@@ -19,8 +19,14 @@ This project is Licensed under ${license}
     }
 
 }
+//Check which programming language has been selected and adds an icon on its place
+function iconProgrammingLanguages(languages) {
+    for (let i =0; i < languages.length; i++) {
+        return `
+        <a href="https://developer.mozilla.org/en-US/docs/Web/${languages[i]}" title="${languages[i]}"><img src="https://github.com/get-icon/geticon/raw/master/icons/${languages[i]}.svg" alt="${languages[i]}" width="21px" height="21px"></a>`
+    }
+}
 //Readme template
-//Fix the format
 function markdownMaker (data) {
     return `
 ${renderLicense(data.license)}
@@ -34,7 +40,8 @@ ${renderLicense(data.license)}
 * ${linkToLicense(data.license)}
 
 ## Programming Languages
-${data.programming}
+${iconProgrammingLanguages(data.programming)}
+
 ## Description
 ${data.description}
 

@@ -17,7 +17,7 @@ inquirer
         {
             type: 'checkbox',
             message: 'Which programming languages are you using?',
-            choices: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'React', 'Angular'],
+            choices: ['es6' , 'javascript', 'html-5', 'css-3', 'react', 'bootstrap'],
             name: 'programming'
         },
         {
@@ -50,5 +50,5 @@ inquirer
         //Adds the input responses to the markdown template on the markdown.js and then writes the content on a readme file. If the response doesn't have errors it will say succes, but if it does have, will log the error.
         fs.writeFileSync('README.md', markdownMaker(res), (err) => err ? console.log(err) : console.log('saved!'));
         console.log('saved!');
-        console.log(res.license);
+        console.log(res.programming);
     });
