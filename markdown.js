@@ -34,8 +34,7 @@ ${renderLicense(data.license)}
 * ${linkToLicense(data.license)}
 
 ## Programming Languages
-<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="21px" height="21px"></a>
-
+${data.programming}
 ## Description
 ${data.description}
 

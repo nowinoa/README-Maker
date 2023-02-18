@@ -15,6 +15,12 @@ inquirer
             name: 'title'
         },
         {
+            type: 'checkbox',
+            message: 'Which programming languages are you using?',
+            choices: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'React', 'Angular'],
+            name: 'programming'
+        },
+        {
             type: 'input',
             message: 'Could you provide some description about your project?',
             name: 'description'
