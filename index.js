@@ -25,11 +25,11 @@ inquirer
     ]).then((res) => {
         console.log(res);
         const readme = `
-                # ${res.title}
-                ## Description
-                  ${res.description}
-                ## Contributors
-                  ${res.contributors}`;
+                # ${res.title}\n
+                ## Description\n
+                  ${res.description}\n
+                ## Contributors\n
+                  ${res.contributors}\n`;
         const readmeMd = markdown.render(readme);
         fs.writeFile('README.md', readmeMd , (err) => err ? console.log(err) : console.log('Saved!'));
     });
