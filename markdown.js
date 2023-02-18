@@ -27,8 +27,12 @@ function linkToProject(link) {
     }
 }
 function renderImage (src) {
-    return `
-<img src="${src}">`
+    if(src !== ''){
+        return `
+        <img src="${src}">`
+    } else {
+        return ''
+    }
 }
 //List of images to display the icons on programming languages section
 const imageMap = {
@@ -95,12 +99,11 @@ Discover my skills and experience - explore my GitHub profile for more https://g
 //exports the markdown maker function so we can use it in other modules
 module.exports = markdownMaker;
 
+//TODO
 //make a function for credits in case of collavorative
 //list your collaborators. If none, please enter 'none'
     //if none then
         //I creatted this project by myself
     //Else --> list your collaborators following this example = Sara Smith, ...
             //Provide the username on the same order as below
-//TODO
-//Add an image of your project --> url of any picture you would like to add?
 //Video --> add a video section with a link
