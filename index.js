@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const markdownMaker = require('./markdown');
-
 //inputs the questions on the terminal
 inquirer
     .prompt([
@@ -47,6 +46,11 @@ inquirer
             name: 'usage'
         },
         {
+            type: 'url',
+            message: 'Do you have any explanatory video link?',
+            name: 'video'
+        },
+        {
             type: 'input',
             message: 'List your contributors name (Sara Smith, Mark Denver...) or print "none"',
             name: 'contributors'
@@ -56,6 +60,16 @@ inquirer
             message: 'Choose your license:',
             choices: ['Apache','GNU','MIT','Mozilla','General Common', 'Eclipse Public', 'none'],
             name: 'license'
+        },
+        {
+            type: 'input',
+            message: 'Have you used any test on your app?',
+            name: 'test'
+        },
+        {
+            type: 'email',
+            message: 'Please provide your email adress for the questions section',
+            name: 'email'
         },
         {
             type: 'input',

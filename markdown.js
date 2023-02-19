@@ -5,10 +5,19 @@ function renderLicense(license) {
   }
   return "";
 }
-//If there is a license selected then add the license link to the table of contents
+//If there is a license selected then add the license section link to the table of contents
 function linkToLicense(license) {
   if (license != "none") {
     return `* [License](#license)`;
+  } else {
+    return "";
+  }
+  
+}
+//If there is a test process provided then add the tests section link to the table of contents
+function linkToTest(test) {
+  if (test) {
+    return `* [Tests](#tests)`;
   } else {
     return "";
   }
@@ -25,11 +34,14 @@ This project is under ${license} license
   }
 }
 //When the user provides a url to the page, it loads some icons with a link to the project
-function linkToProject(link) {
+function projectLink(link) {
   if (link !== "") {
-    return `
-:point_right:  ${link}  :point_left:
-`;
+    return `:point_right:  ${link}  :point_left:`;
+  }
+}
+function videoLink(video) {
+  if (video !== "") {
+    return `:point_right:  ${video}  :point_left:`;
   }
 }
 //When the user provides a url it will add an image to the readme
@@ -38,6 +50,15 @@ function renderImage(src) {
     return `<img src="${src}">`;
   } else {
     return "";
+  }
+}
+//Renders the tests section
+function renderTestsSection(test) {
+  if(test) {
+   return `## Tests
+           ${test}`
+  } else {
+    return ''
   }
 }
 //When the user collaborated with someone else this will print the names
@@ -83,6 +104,11 @@ function markdownMaker(data) {
 return `${renderLicense(data.license)}
 # ${data.title}
 
+## Description
+${data.description}
+${projectLink(data.linkProject)}
+${renderImage(data.linkPic)}
+
 ## Table of Contents
 * [Tools](#tools)
 * [Description](#description)
@@ -90,26 +116,31 @@ return `${renderLicense(data.license)}
 * [Usage](#usage)
 * [Credits](#credits)
 ${linkToLicense(data.license)}
+${linkToTest(data.test)}
+* [Questions](#questions)
+* [More Projects](#more projects)
+
 
 ## Tools
 ${iconProgrammingLanguages(data.programming)}
-
-## Description
-${data.description}
-${linkToProject(data.linkProject)}
-${renderImage(data.linkPic)}
-
 
 # Installation
 ${data.installation}
 
 ## Usage
 ${data.usage}
+${videoLink(data.video)}
+
 
 ## Credits
 ${collaboration(data.contributors, data.github, data.name)}
 
 ${renderLicenseSection(data.license)}
+
+${renderTestsSection(data.test)}
+
+## Questions
+For any questions or issues please contact me on ${data.email}
 
 ## More Projects
 Discover my skills and experience - explore my GitHub profile for more https://github.com/${data.github} :computer:
@@ -120,3 +151,23 @@ module.exports = markdownMaker;
 
 //TODO:
 //prepare the content that you will paste on the video - your readme content
+//1. add a link to a video on usage section
+//report issues section with email
+//modify more projects to win contributors
+
+// When a user enters their GitHub username, it's added to the section of the README entitled Questions, with a link to their GitHub profile.
+
+// When a user enters their email address, it's added to the section of the README entitled Questions, with instructions on how to reach them with additional questions.
+
+//1. 
+    //film a video
+    //if existing url then return link with icons 
+    //if not ''
+
+
+//Following the bootcamp
+//Add the link to video in usage if a video link exists
+//Add test section
+//Add questions section
+//Modify the tex of more projects for more collborative one
+
