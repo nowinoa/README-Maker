@@ -8,8 +8,10 @@ function renderLicense (license) {
 //If there is a license selected then add the license link to the table of contents
 function linkToLicense (license) {
     if(license != 'none') {
-        return `[License](#license)`;
-    } 
+        return `* [License](#license)`;
+    } else {
+        return ''
+    }
 }
 //If there is a license selected then add the license section to the readme
 function renderLicenseSection (license) {
@@ -83,7 +85,7 @@ ${renderLicense(data.license)}
 * [installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-* ${linkToLicense(data.license)}
+${linkToLicense(data.license)}
 
 ## Tools
 ${iconProgrammingLanguages(data.programming)}
