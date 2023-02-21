@@ -126,8 +126,7 @@ ${renderImage(data.linkPic)}
 
 ## Table of Contents
 * [Tools](#tools)
-* [Description](#description)
-* [installation](#installation)
+* [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 ${renderTableOfContent(data.license, data.test)}
@@ -178,11 +177,6 @@ module.exports = markdownMaker;
     //if not ''
 
 
-// Los links tienen que estar una linea por debajo 
-//Description out of tble of content
-//Table of content en capitalizarla
-//Fixing empty spaces on table of content
-//Installattion should be ##
-//video una linea por debajo
-//Test shouldn't be code block
+
+
 //Add github profile link on questions section
