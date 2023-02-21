@@ -37,7 +37,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Which installation process you need to apply to run this project on other computer?',
+            message: 'Which installation process do you need to apply to run this project on another computer?',
             name: 'installation'
         },
         {
@@ -68,7 +68,7 @@ inquirer
         },
         {
             type: 'email',
-            message: 'Please provide your email adress for the questions section',
+            message: 'Please provide your email adress for questions section',
             name: 'email'
         },
         {
