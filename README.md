@@ -2,11 +2,11 @@
 # Readme Maker
 
 ## Description
-The Readme Maker Application is a Node based application that prompts the user with a series of questions via the command line interface in order to generate a comprehensive readme file for their project. The motivation behind this project was to streamline the process of creating a well-organized and informative readme file for developers, project managers, and other stakeholders. The application solves the problem of spending time and effort in creating a readme file from scratch, allowing users to focus on other important aspects of their project. During the development of this project, I learned how to use Node.js to create a command line application, integrate various packages and dependencies, and write code to dynamically generate a text file.
+The Readme Maker Application is a Node-based application that prompts the user with a series of questions via the command line interface in order to generate a comprehensive readme file for their project. The motivation behind this project was to streamline the process of creating a well-organized and informative readme file for developers, project managers, and other stakeholders. The application solves the problem of spending time and effort in creating a readme file from scratch, allowing users to focus on other important aspects of their project. During the development of this project, I learned how to use Node.js to create a command line application, integrate various packages and dependencies, and write code to dynamically generate a text file.
 
 <img src="./assets/readme-maker.png">
 
-:point_right:  https://github.com/nowinoa/README-Maker   :point_left:
+:point_right:  https://github.com/nowinoa/README-Maker  :point_left:
 
 ## Table of Contents
 * [Tools](#tools)
@@ -20,12 +20,12 @@ The Readme Maker Application is a Node based application that prompts the user w
 <img src="https://github.com/get-icon/geticon/raw/master/icons/es6.svg" alt="ECMAScript 6" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/npm.svg" alt="npm" width="30px" height="30px">  <img src="https://github.com/get-icon/geticon/raw/master/icons/git-icon.svg" alt="Git" width="30px" height="30px">
 
 ## Installation
-To install the Readme Maker Application, first, run the command npm install to install the necessary node_modules and dependencies. After installation, type node index.js to generate a series of questions about your project, such as name, project description, link to project, project usage, installation, and more. Once the questions are answered, the application will automatically create a readme file based on the information provided.
+To install the Readme Maker Application, first, run the command npm install to install the necessary node_modules and dependencies (Inquirer, fileSystem and Moment). After installation, type node index.js to generate a series of questions about your project, such as name, project description, link to project, project usage, installation, and more. Once the questions are answered, the application will automatically create a readme file based on the information provided.
 
 ## Usage
 The user must respond to all prompts presented through the command line interface to generate a readme file using the Readme Maker Application. It will present the user with a variety of prompts, including input fields, multiple-choice selections, and unique-choice selections. When presented with multiple-choice options, the user can select by pressing the space bar.  Images can be added by URL and path specification. Once all the prompts have been answered, the application will save the resulting readme file as Readme.md. The user is free to modify any aspect of the readme file according to their preferences or specific requirements.
 
-:point_right:  https://www.youtube.com/watch?v=TlB_eWDSMt4  :point_left:
+:point_right:  https://drive.google.com/file/d/1rRiGvV1DkKWk_53k8B8qSLZOnIPjaNxM/view  :point_left:
 
 ## Credits
 Created by <a href="https://github.com/nowinoa">Ainhoa Prada</a>

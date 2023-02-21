@@ -151,12 +151,3 @@ To explore more about my projects visit my profile :point_right: <a href="https:
 //exports the markdown maker function so we can use it in other modules
 module.exports = markdownMaker;
 
-//TODO:
-//1. 
-    //film a video
-    //if existing url then return link with icons 
-    //if not ''
-//Rewrite the questions in a proper way
-//Prepare the readme content in notes
-//Upload a picture to somewhere where you can get the url - of the project
-//Film and add the video link to the Readme
