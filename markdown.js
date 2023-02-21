@@ -143,7 +143,7 @@ ${renderTestsSection(data.test)}
 ## Questions
 For any questions or issues feel free to contact me at: ${data.email}
 
-To explore more about my projects visit my profile <a href="https://github.com/${data.github}">${data.name} :computer:</a>
+To explore more about my projects visit my profile :point_right: <a href="https://github.com/${data.github}">:computer:</a>
 
 © ${moment().format('YYYY')} ${data.name}. Confidential and Proprietary. All Rights Reserved.
 `;
