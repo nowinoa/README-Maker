@@ -109,8 +109,10 @@ return `${renderLicense(data.license)}
 ## Description
 ${data.description}
 
-${projectLink(data.linkProject)}
 ${renderImage(data.linkPic)}
+
+${projectLink(data.linkProject)}
+
 
 ## Table of Contents
 * [Tools](#tools)
@@ -119,7 +121,6 @@ ${renderImage(data.linkPic)}
 * [Credits](#credits)
 ${renderTableOfContent(data.license, data.test)}
 * [Questions](#questions)
-* [More-Projects](#more-projects)
 
 ## Tools
 ${iconProgrammingLanguages(data.programming)}
