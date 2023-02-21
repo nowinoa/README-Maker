@@ -6,7 +6,7 @@ inquirer
     .prompt([
         {
             type: 'input',
-            message: 'Hello, and welcome to the ultimate readme maker. Can I get your name?',
+            message: 'Welcome to the ultimate readme maker. Can I get your name?',
             name: 'name'
         },
         {
@@ -32,7 +32,7 @@ inquirer
         },
         {
             type: 'url',
-            message: 'Do you have any link with a picture of your project?',
+            message: 'Do you have any link with a picture of your project? If your image is on assets then specify the path (./assets/photo.png)',
             name: 'linkPic'
         },
         {
@@ -42,7 +42,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Write a explanation about how to use this project',
+            message: 'How should I use this application?',
             name: 'usage'
         },
         {
@@ -63,7 +63,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Have you used any test on your app?',
+            message: "Could you describe the test process? If 'none' please press enter",
             name: 'test'
         },
         {
