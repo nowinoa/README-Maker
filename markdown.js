@@ -48,6 +48,7 @@ function projectLink(link) {
     return ''
   }
 }
+//When the user provides a url to a video, it loads some icons with a link to the video
 function videoLink(video) {
   if (video !== "") {
     return `:point_right:  ${video}  :point_left:`;
@@ -113,7 +114,6 @@ ${renderImage(data.linkPic)}
 
 ${projectLink(data.linkProject)}
 
-
 ## Table of Contents
 * [Tools](#tools)
 * [Installation](#installation)
@@ -152,25 +152,10 @@ To explore more about my projects visit my profile :point_right: <a href="https:
 module.exports = markdownMaker;
 
 //TODO:
-//prepare the content that you will paste on the video - your readme content
-//1. add a link to a video on usage section
-//report issues section with email
-//modify more projects to win contributors
-
-// When a user enters their GitHub username, it's added to the section of the README entitled Questions, with a link to their GitHub profile.
-
-// When a user enters their email address, it's added to the section of the README entitled Questions, with instructions on how to reach them with additional questions.
-
 //1. 
     //film a video
     //if existing url then return link with icons 
     //if not ''
-
-
-
-
-//Modify questions and more projects
-
 //Rewrite the questions in a proper way
 //Prepare the readme content in notes
 //Upload a picture to somewhere where you can get the url - of the project
