@@ -5,23 +5,33 @@ function renderLicense(license) {
   }
   return "";
 }
+//WHEN LICENSE = NONE OR '' IS UNDEFINED -- NEED TO CHECK
+function renderTableOfContent(license, test) {
+  if (license != "none" && test !== '') {
+    return `* [License](#license)
+* [Tests](#tests)`;
+  } else if (license !== 'none') {
+    return '* [License](#license)';
+  } else if (test !== '') {
+    return '* [Tests](#tests)';
+  } else {
+
+  }
+}
 //If there is a license selected then add the license section link to the table of contents
-function linkToLicense(license) {
-  if (license != "none") {
-    return `* [License](#license)`;
-  } else {
-    return "";
-  }
-  
-}
-//If there is a test process provided then add the tests section link to the table of contents
-function linkToTest(test) {
-  if (test) {
-    return `* [Tests](#tests)`;
-  } else {
-    return "";
-  }
-}
+// function linkToLicense(license) {
+//   if (license != "none") {
+//     return `* [License](#license)`;
+//   } else {
+//     return ''
+//   }
+// }
+// //If there is a test process provided then add the tests section link to the table of contents
+// function linkToTest(test) {
+//   if (test !== '') {
+//     return `* [Tests](#tests)`;
+//   } 
+// }
 //If there is a license selected then add the license section to the readme
 function renderLicenseSection(license) {
   if (license != "none") {
@@ -33,15 +43,28 @@ This project is under ${license} license
     return "";
   }
 }
+//Renders the tests section
+function renderTestsSection(test) {
+  if(test) {
+   return `## Tests
+${test}`
+  } else {
+    return ''
+  }
+}
 //When the user provides a url to the page, it loads some icons with a link to the project
 function projectLink(link) {
   if (link !== "") {
     return `:point_right:  ${link}  :point_left:`;
+  } else {
+    return ''
   }
 }
 function videoLink(video) {
   if (video !== "") {
     return `:point_right:  ${video}  :point_left:`;
+  } else {
+    return ''
   }
 }
 //When the user provides a url it will add an image to the readme
@@ -50,15 +73,6 @@ function renderImage(src) {
     return `<img src="${src}">`;
   } else {
     return "";
-  }
-}
-//Renders the tests section
-function renderTestsSection(test) {
-  if(test) {
-   return `## Tests
-           ${test}`
-  } else {
-    return ''
   }
 }
 //When the user collaborated with someone else this will print the names
@@ -106,6 +120,7 @@ return `${renderLicense(data.license)}
 
 ## Description
 ${data.description}
+
 ${projectLink(data.linkProject)}
 ${renderImage(data.linkPic)}
 
@@ -115,22 +130,20 @@ ${renderImage(data.linkPic)}
 * [installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-${linkToLicense(data.license)}
-${linkToTest(data.test)}
+${renderTableOfContent(data.license, data.test)}
 * [Questions](#questions)
-* [More Projects](#more projects)
-
+* [More-Projects](#more-projects)
 
 ## Tools
 ${iconProgrammingLanguages(data.programming)}
 
-# Installation
+## Installation
 ${data.installation}
 
 ## Usage
 ${data.usage}
-${videoLink(data.video)}
 
+${videoLink(data.video)}
 
 ## Credits
 ${collaboration(data.contributors, data.github, data.name)}
@@ -165,9 +178,11 @@ module.exports = markdownMaker;
     //if not ''
 
 
-//Following the bootcamp
-//Add the link to video in usage if a video link exists
-//Add test section
-//Add questions section
-//Modify the tex of more projects for more collborative one
-
+// Los links tienen que estar una linea por debajo 
+//Description out of tble of content
+//Table of content en capitalizarla
+//Fixing empty spaces on table of content
+//Installattion should be ##
+//video una linea por debajo
+//Test shouldn't be code block
+//Add github profile link on questions section
