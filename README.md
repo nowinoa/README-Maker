@@ -1,18 +1,18 @@
-
+![this was a badge](https://img.shields.io/badge/License-MIT-blue.svg)
 # Readme Maker
 
 ## Description
-You need to download it from github. Also, you will need to install and init npm module, after installation you can open a new terminal and type node index.js to run the program 
+? You need to download it from github. Also, you will need to install and init npm module, after installation you can open a new terminal and 
 
-:point_right:  https://github.com/nowinoa/README-Maker  :point_left:
+:point_right:  type node index.js to run the programhttps://github.com/nowinoa/README-Maker  :point_left:
 <img src="https://www.wikihow.com/images/thumb/2/2f/Write-a-Read-Me-Step-1.jpg/v4-460px-Write-a-Read-Me-Step-1.jpg.webp">
 
 ## Table of Contents
 * [Tools](#tools)
-* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
+* [License](#license)
 * [Tests](#tests)
 * [Questions](#questions)
 * [More-Projects](#more-projects)
@@ -29,15 +29,19 @@ You need to download it from github. Also, you will need to install and init npm
 :point_right:  https://www.youtube.com/watch?v=UbniF_HYjok&t=1090s  :point_left:
 
 ## Credits
-Created by <a href="https://github.com/github">Ainhoa Prada</a>
+Created by <a href="https://github.com/nowinoa">Ainhoa Prada</a>
 
 
+## License
+This project is under MIT license
+        
 
 ## Tests
- Yes, to use the test please write npm install jest
+You need to download it from github. Also, you will need to install and init npm module, after installation you can open a new terminal and type node index.js to run the program
 
 ## Questions
-For any questions or issues please contact me on noooa@gmail.com
+For any questions or issues feel free to contact me at: nowi@gmail.com
 
-## More Projects
-Discover my skills and experience - explore my GitHub profile for more https://github.com/github :computer:
+To explore more about my projects visit my profile <a href="https://github.com/nowinoa">Ainhoa Prada :computer:</a>
+
+© 2023 Ainhoa Prada. Confidential and Proprietary. All Rights Reserved.

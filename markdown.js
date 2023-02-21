@@ -1,11 +1,13 @@
-//renders the license image/icon
+//After installing moment (npm install moment) we need to require it - then we will use it to add the year on the readme file
+const moment = require('moment');
+//Renders the license image/icon
 function renderLicense(license) {
   if (license != "none") {
     return `![this was a badge](https://img.shields.io/badge/License-${license}-blue.svg)`;
   }
   return "";
 }
-//WHEN LICENSE = NONE OR '' IS UNDEFINED -- NEED TO CHECK
+//Checks if the user specified a license and a test
 function renderTableOfContent(license, test) {
   if (license != "none" && test !== '') {
     return `* [License](#license)
@@ -15,23 +17,9 @@ function renderTableOfContent(license, test) {
   } else if (test !== '') {
     return '* [Tests](#tests)';
   } else {
-
+    return '';
   }
 }
-//If there is a license selected then add the license section link to the table of contents
-// function linkToLicense(license) {
-//   if (license != "none") {
-//     return `* [License](#license)`;
-//   } else {
-//     return ''
-//   }
-// }
-// //If there is a test process provided then add the tests section link to the table of contents
-// function linkToTest(test) {
-//   if (test !== '') {
-//     return `* [Tests](#tests)`;
-//   } 
-// }
 //If there is a license selected then add the license section to the readme
 function renderLicenseSection(license) {
   if (license != "none") {
@@ -152,10 +140,11 @@ ${renderLicenseSection(data.license)}
 ${renderTestsSection(data.test)}
 
 ## Questions
-For any questions or issues please contact me on ${data.email}
+For any questions or issues feel free to contact me at: ${data.email}
 
-## More Projects
-Discover my skills and experience - explore my GitHub profile for more https://github.com/${data.github} :computer:
+To explore more about my projects visit my profile <a href="https://github.com/${data.github}">${data.name} :computer:</a>
+
+© ${moment().format('YYYY')} ${data.name}. Confidential and Proprietary. All Rights Reserved.
 `;
 }
 //exports the markdown maker function so we can use it in other modules
@@ -179,4 +168,9 @@ module.exports = markdownMaker;
 
 
 
-//Add github profile link on questions section
+//Modify questions and more projects
+
+//Rewrite the questions in a proper way
+//Prepare the readme content in notes
+//Upload a picture to somewhere where you can get the url - of the project
+//Film and add the video link to the Readme
