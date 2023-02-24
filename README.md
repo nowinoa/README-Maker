@@ -29,6 +29,7 @@ The user must respond to all prompts presented through the command line interfac
 
 ## Credits
 The icons of this project where provided by: https://github.com/get-icon/geticon.
+
 Created by <a href="https://github.com/nowinoa">Ainhoa Prada</a>.
 
 
