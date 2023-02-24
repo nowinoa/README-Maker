@@ -28,7 +28,8 @@ The user must respond to all prompts presented through the command line interfac
 :point_right:  https://drive.google.com/file/d/1rRiGvV1DkKWk_53k8B8qSLZOnIPjaNxM/view  :point_left:
 
 ## Credits
-Created by <a href="https://github.com/nowinoa">Ainhoa Prada</a>
+The icons of this project where provided by: https://github.com/get-icon/geticon.
+Created by <a href="https://github.com/nowinoa">Ainhoa Prada</a>.
 
 
 ## License
